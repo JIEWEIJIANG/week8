@@ -29,5 +29,18 @@ public class BinarySearch {
     }
     //ToDo 2: Call the above method and test the algorithm  
     // provide time and space analysis 
+    public static void main(String[] args){
+        int[] sortedArray = {2,4,6,8,10};
+        int key = 6;
+        int low = 0;
+        int high = sortedArray.length - 1;
+        int result = runBinarySearchIteratively(sortedArray, key, low, high);
+        if(result != Integer.MAX_VALUE){
+            System.out.println(key + " found at index " + result + ".");
+        }else{
+            System.out.println(key + " not found.");
+        }
+    }
 
 }
+
